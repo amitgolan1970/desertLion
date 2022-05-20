@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textDirection="ltr" android:layoutDirection="ltr"
+    tools:context=".GuessNumberActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/ivDesertLion"
+        android:layout_gravity="center"
+        android:src="@mipmap/lion_simba"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_gravity="left"
+        android:id="@+id/etGuessId"
+        android:textColor="#FFFF00"
+        android:background="#1EAF1E"
+        android:maxLength="4"
+        android:hint="Guess"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:text="Go"
+        android:id="@+id/btnGuessId"
+        android:layout_marginLeft="50dp"
+        android:textColor="#1EAF1E"
+        android:background="#FFFF00"
+        android:textSize="20dp"/>
+
+        <Switch
+            android:layout_marginLeft="40dp"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:background="#aba"
+            android:id="@+id/swId" android:checked="true"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="info"
+        android:background="#270000FF"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvInformation"
+        />
+
+</LinearLayout>
